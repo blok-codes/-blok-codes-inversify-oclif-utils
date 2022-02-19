@@ -15,7 +15,7 @@ export abstract class Command extends OclifCommand {
         const command = resolve(this) as Command
 
         command.argv = argv || process.argv.slice(2)
-        command.config = await Config.load(opts || require('require-main-filename')() || __dirname) as Config
+        command.config = await Config.load(opts || module.parent && module.parent.parent && module.parent.parent.filename || __dirname) as Config
 
         return command._run()
     }
