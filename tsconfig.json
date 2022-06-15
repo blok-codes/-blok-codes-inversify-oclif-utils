@@ -1,23 +1,20 @@
 {
     "compilerOptions": {
         "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
         "importHelpers": true,
         "module": "commonjs",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
         "outDir": "lib",
+        "pretty": true,
         "rootDir": "src",
         "strict": true,
-        "target": "es2019",
-        "composite": true,
-        "types": [
-            "node",
-            "inversify",
-            "reflect-metadata",
-            "mocha"
-        ],
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+        "target": "es2017"
     },
     "include": [
-        "src/**/*"
+        "./src/**/*.ts"
     ]
 }

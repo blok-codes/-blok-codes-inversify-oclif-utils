@@ -1,10 +1,12 @@
 {
-  "extends": "../tsconfig",
-  "compilerOptions": {
-    "noEmit": true,
-    "sourceMap": true
-  },
-  "references": [
-    {"path": ".."}
-  ]
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        "noEmit": true,
+        "sourceMap": true
+    },
+    "references": [
+        {
+            "path": ".."
+        }
+    ]
 }
