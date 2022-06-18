@@ -1,7 +1,7 @@
 {
     "name": "@blok-codes/inversify-oclif-utils",
     "description": "Create oclif commands with inversify",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "author": "Jude Seide <jude.seide@gmail.com>",
     "repository": {
         "type": "git",
@@ -13,6 +13,9 @@
     "homepage": "https://github.com/blok-codes/inversify-oclif-utils",
     "main": "./lib/index.js",
     "types": "./lib/index.d.ts",
+    "bundledDependencies": [
+        "@oclif/core"
+    ],
     "dependencies": {
         "@oclif/core": "^1.9.2",
         "inversify": "^6.0.1",
